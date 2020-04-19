@@ -14,8 +14,16 @@ public class NGram implements Comparable<NGram> {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (!(obj instanceof NGram)) return false;
+
+        return compareTo((NGram) obj) == 0 ? true : false;
+    }
+
+    @Override
     public int compareTo(final NGram other) {
-        // to lowercase befor compare
         if (n == other.n) {
             var i = 0;
             var comparaison = values[i].toLowerCase().compareTo(other.values[i].toLowerCase());

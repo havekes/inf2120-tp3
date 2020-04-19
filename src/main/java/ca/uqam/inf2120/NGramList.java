@@ -18,13 +18,12 @@ public class NGramList extends LinkedList<NGram> {
             var intersection = new ArrayList<NGram>();
             for (var a : this) {
                 for(var b : other) {
-                    if (a.compareTo(b) == 0) {
+                    if (a.compareTo(b) == 0 && !intersection.contains(a)) {
                         intersection.add(a);
                     }
                 }
             }
-
-            return intersection.stream().distinct().count();
+            return intersection.size();
         }
         return -1;
     }
