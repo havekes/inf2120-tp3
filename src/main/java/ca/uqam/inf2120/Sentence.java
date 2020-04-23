@@ -1,7 +1,8 @@
 package ca.uqam.inf2120;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Sentence {
 
@@ -12,26 +13,16 @@ public class Sentence {
         this.maxN = maxN;
         this.nGrams = new NGramList[maxN + 1];
 
-        var inputArray = input.trim().toCharArray();
-        var words = new ArrayList<String>();
-        var lastBreak = 0;
-
-        for (var i = 0; i < inputArray.length; i++) {
-            if (!Character.isLetter(inputArray[i])) {
-                words.add(input.substring(lastBreak, i));
-                lastBreak = i + 1;
-            }
-        }
-        if (input.substring(lastBreak).length() > 0) {
-            words.add(input.substring(lastBreak));
-        }
+        var words = input.trim().split("\\W|\\d|_");
 
         for (var n = 1; n <= maxN; n++) {
-            this.nGrams[n] = generateNGramList(n, words);
+            this.nGrams[n] = generateNGramList(n, Arrays.stream(words)
+                .filter(w -> w != null && !w.equals(""))
+                .collect(Collectors.toList()));
         }
     }
 
-    public static NGramList generateNGramList(final int n, final List<String> words) {
+    public static NGramList generateNGramList(int n, List<String> words) {
         var list = new NGramList(n);
         for (var i = 0; (i + n) <= words.size(); i++) {
             list.add(new NGram(words.subList(i, i + n).toArray(new String[0])));
@@ -82,7 +73,7 @@ public class Sentence {
         for (var n = 1; n <= target.maxN; n++) {
             var r = target.nGrams[n].recall(generated.nGrams[n]);
             var q = generated.nGrams[n].precision(target.nGrams[n]);
-            var f = (double) 2 * r * q / (r + q);
+            var f = (r + q == 0) ? 0 : (double) 2 * r * q / (r + q);
             sb.append("F" + n + " = " + f);
             if (n != target.maxN) sb.append(", ");
         }

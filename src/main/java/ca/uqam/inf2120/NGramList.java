@@ -1,6 +1,5 @@
 package ca.uqam.inf2120;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.stream.Collectors;
 
@@ -12,18 +11,13 @@ public class NGramList extends LinkedList<NGram> {
         this.n = n;
     }
 
-    // Can return 0;
     public long compareWith(NGramList other) {
         if (other.n == n) {
-            var intersection = new ArrayList<NGram>();
-            for (var a : this) {
-                for(var b : other) {
-                    if (a.compareTo(b) == 0 && !intersection.contains(a)) {
-                        intersection.add(a);
-                    }
-                }
+            if (this.size() < other.size()) {
+                return this.stream().filter(other::contains).count();
+            } else {
+                return other.stream().filter(this::contains).count();
             }
-            return intersection.size();
         }
         return -1;
     }
@@ -39,7 +33,7 @@ public class NGramList extends LinkedList<NGram> {
     }
 
     @Override
-    public boolean add(NGram e) {
+    public boolean add(final NGram e) {
         if (e.n != n) return false;
         return super.add(e);
     }

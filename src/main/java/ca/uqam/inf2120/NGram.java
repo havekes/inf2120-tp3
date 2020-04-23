@@ -23,13 +23,13 @@ public class NGram implements Comparable<NGram> {
     }
 
     @Override
-    public int compareTo(final NGram other) {
+    public int compareTo(NGram other) {
         if (n == other.n) {
             var i = 0;
-            var comparaison = values[i].toLowerCase().compareTo(other.values[i].toLowerCase());
+            var comparaison = values[i].compareToIgnoreCase(other.values[i]);
             while (comparaison == 0 && i < n - 1) {
                 i++;
-                comparaison = values[i].toLowerCase().compareTo(other.values[i].toLowerCase());
+                comparaison = values[i].compareToIgnoreCase(other.values[i]);
             }
             return comparaison;
         }
