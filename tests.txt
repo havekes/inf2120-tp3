@@ -1,0 +1,221 @@
+--------------------------------------------------------------------------------
+Test 1
+--------------------------------------------------------------------------------
+Entrez la phrase generee : a b c d e
+Entrez la phrase cible : a b c d e
+1-grammes de la phrase 1 = ["a", "b", "c", "d", "e"]
+2-grammes de la phrase 1 = [( "a", "b" ), ( "b", "c" ), ( "c", "d" ), ( "d", "e" )]
+3-grammes de la phrase 1 = [( "a", "b", "c" ), ( "b", "c", "d" ), ( "c", "d", "e" )]
+4-grammes de la phrase 1 = [( "a", "b", "c", "d" ), ( "b", "c", "d", "e" )]
+1-grammes de la phrase 2 = ["a", "b", "c", "d", "e"]
+2-grammes de la phrase 2 = [( "a", "b" ), ( "b", "c" ), ( "c", "d" ), ( "d", "e" )]
+3-grammes de la phrase 2 = [( "a", "b", "c" ), ( "b", "c", "d" ), ( "c", "d", "e" )]
+4-grammes de la phrase 2 = [( "a", "b", "c", "d" ), ( "b", "c", "d", "e" )]
+c1 = 5, c2 = 4, c3 = 3, c4 = 2.
+r1 = 1.0, r2 = 1.0, r3 = 1.0, r4 = 1.0.
+q1 = 1.0, q2 = 1.0, q3 = 1.0, q4 = 1.0.
+F1 = 1.0, F2 = 1.0, F3 = 1.0, F4 = 1.0.
+--------------------------------------------------------------------------------
+Test 2
+--------------------------------------------------------------------------------
+Entrez la phrase generee : a b c d
+Entrez la phrase cible : a b c d
+1-grammes de la phrase 1 = ["a", "b", "c", "d"]
+2-grammes de la phrase 1 = [( "a", "b" ), ( "b", "c" ), ( "c", "d" )]
+3-grammes de la phrase 1 = [( "a", "b", "c" ), ( "b", "c", "d" )]
+4-grammes de la phrase 1 = [( "a", "b", "c", "d" )]
+1-grammes de la phrase 2 = ["a", "b", "c", "d"]
+2-grammes de la phrase 2 = [( "a", "b" ), ( "b", "c" ), ( "c", "d" )]
+3-grammes de la phrase 2 = [( "a", "b", "c" ), ( "b", "c", "d" )]
+4-grammes de la phrase 2 = [( "a", "b", "c", "d" )]
+c1 = 4, c2 = 3, c3 = 2, c4 = 1.
+r1 = 1.0, r2 = 1.0, r3 = 1.0, r4 = 1.0.
+q1 = 1.0, q2 = 1.0, q3 = 1.0, q4 = 1.0.
+F1 = 1.0, F2 = 1.0, F3 = 1.0, F4 = 1.0.
+--------------------------------------------------------------------------------
+Test 3
+--------------------------------------------------------------------------------
+Entrez la phrase generee : a b
+Entrez la phrase cible : a b
+1-grammes de la phrase 1 = ["a", "b"]
+2-grammes de la phrase 1 = [( "a", "b" )]
+3-grammes de la phrase 1 = []
+4-grammes de la phrase 1 = []
+1-grammes de la phrase 2 = ["a", "b"]
+2-grammes de la phrase 2 = [( "a", "b" )]
+3-grammes de la phrase 2 = []
+4-grammes de la phrase 2 = []
+c1 = 2, c2 = 1, c3 = 0, c4 = 0.
+r1 = 1.0, r2 = 1.0, r3 = 0.0, r4 = 0.0.
+q1 = 1.0, q2 = 1.0, q3 = 0.0, q4 = 0.0.
+F1 = 1.0, F2 = 1.0, F3 = 0.0, F4 = 0.0.
+--------------------------------------------------------------------------------
+Test 4
+--------------------------------------------------------------------------------
+Entrez la phrase generee : a
+Entrez la phrase cible : a
+1-grammes de la phrase 1 = ["a"]
+2-grammes de la phrase 1 = []
+3-grammes de la phrase 1 = []
+4-grammes de la phrase 1 = []
+1-grammes de la phrase 2 = ["a"]
+2-grammes de la phrase 2 = []
+3-grammes de la phrase 2 = []
+4-grammes de la phrase 2 = []
+c1 = 1, c2 = 0, c3 = 0, c4 = 0.
+r1 = 1.0, r2 = 0.0, r3 = 0.0, r4 = 0.0.
+q1 = 1.0, q2 = 0.0, q3 = 0.0, q4 = 0.0.
+F1 = 1.0, F2 = 0.0, F3 = 0.0, F4 = 0.0.
+--------------------------------------------------------------------------------
+Test 5
+--------------------------------------------------------------------------------
+Entrez la phrase generee : A B C
+Entrez la phrase cible : a b c
+1-grammes de la phrase 1 = ["A", "B", "C"]
+2-grammes de la phrase 1 = [( "A", "B" ), ( "B", "C" )]
+3-grammes de la phrase 1 = [( "A", "B", "C" )]
+4-grammes de la phrase 1 = []
+1-grammes de la phrase 2 = ["a", "b", "c"]
+2-grammes de la phrase 2 = [( "a", "b" ), ( "b", "c" )]
+3-grammes de la phrase 2 = [( "a", "b", "c" )]
+4-grammes de la phrase 2 = []
+c1 = 3, c2 = 2, c3 = 1, c4 = 0.
+r1 = 1.0, r2 = 1.0, r3 = 1.0, r4 = 0.0.
+q1 = 1.0, q2 = 1.0, q3 = 1.0, q4 = 0.0.
+F1 = 1.0, F2 = 1.0, F3 = 1.0, F4 = 0.0.
+--------------------------------------------------------------------------------
+Test 6
+--------------------------------------------------------------------------------
+Entrez la phrase generee : a b c d e
+Entrez la phrase cible : f g h i j
+1-grammes de la phrase 1 = ["a", "b", "c", "d", "e"]
+2-grammes de la phrase 1 = [( "a", "b" ), ( "b", "c" ), ( "c", "d" ), ( "d", "e" )]
+3-grammes de la phrase 1 = [( "a", "b", "c" ), ( "b", "c", "d" ), ( "c", "d", "e" )]
+4-grammes de la phrase 1 = [( "a", "b", "c", "d" ), ( "b", "c", "d", "e" )]
+1-grammes de la phrase 2 = ["f", "g", "h", "i", "j"]
+2-grammes de la phrase 2 = [( "f", "g" ), ( "g", "h" ), ( "h", "i" ), ( "i", "j" )]
+3-grammes de la phrase 2 = [( "f", "g", "h" ), ( "g", "h", "i" ), ( "h", "i", "j" )]
+4-grammes de la phrase 2 = [( "f", "g", "h", "i" ), ( "g", "h", "i", "j" )]
+c1 = 0, c2 = 0, c3 = 0, c4 = 0.
+r1 = 0.0, r2 = 0.0, r3 = 0.0, r4 = 0.0.
+q1 = 0.0, q2 = 0.0, q3 = 0.0, q4 = 0.0.
+F1 = 0.0, F2 = 0.0, F3 = 0.0, F4 = 0.0.
+--------------------------------------------------------------------------------
+Test 7
+--------------------------------------------------------------------------------
+Entrez la phrase generee : a b c d
+Entrez la phrase cible : a c e f
+1-grammes de la phrase 1 = ["a", "b", "c", "d"]
+2-grammes de la phrase 1 = [( "a", "b" ), ( "b", "c" ), ( "c", "d" )]
+3-grammes de la phrase 1 = [( "a", "b", "c" ), ( "b", "c", "d" )]
+4-grammes de la phrase 1 = [( "a", "b", "c", "d" )]
+1-grammes de la phrase 2 = ["a", "c", "e", "f"]
+2-grammes de la phrase 2 = [( "a", "c" ), ( "c", "e" ), ( "e", "f" )]
+3-grammes de la phrase 2 = [( "a", "c", "e" ), ( "c", "e", "f" )]
+4-grammes de la phrase 2 = [( "a", "c", "e", "f" )]
+c1 = 2, c2 = 0, c3 = 0, c4 = 0.
+r1 = 0.5, r2 = 0.0, r3 = 0.0, r4 = 0.0.
+q1 = 0.5, q2 = 0.0, q3 = 0.0, q4 = 0.0.
+F1 = 0.5, F2 = 0.0, F3 = 0.0, F4 = 0.0.
+--------------------------------------------------------------------------------
+Test 8
+--------------------------------------------------------------------------------
+Entrez la phrase generee : a3b3c3d3e
+Entrez la phrase cible : a.b,c,-d'e
+1-grammes de la phrase 1 = ["a", "b", "c", "d", "e"]
+2-grammes de la phrase 1 = [( "a", "b" ), ( "b", "c" ), ( "c", "d" ), ( "d", "e" )]
+3-grammes de la phrase 1 = [( "a", "b", "c" ), ( "b", "c", "d" ), ( "c", "d", "e" )]
+4-grammes de la phrase 1 = [( "a", "b", "c", "d" ), ( "b", "c", "d", "e" )]
+1-grammes de la phrase 2 = ["a", "b", "c", "d", "e"]
+2-grammes de la phrase 2 = [( "a", "b" ), ( "b", "c" ), ( "c", "d" ), ( "d", "e" )]
+3-grammes de la phrase 2 = [( "a", "b", "c" ), ( "b", "c", "d" ), ( "c", "d", "e" )]
+4-grammes de la phrase 2 = [( "a", "b", "c", "d" ), ( "b", "c", "d", "e" )]
+c1 = 5, c2 = 4, c3 = 3, c4 = 2.
+r1 = 1.0, r2 = 1.0, r3 = 1.0, r4 = 1.0.
+q1 = 1.0, q2 = 1.0, q3 = 1.0, q4 = 1.0.
+F1 = 1.0, F2 = 1.0, F3 = 1.0, F4 = 1.0.
+--------------------------------------------------------------------------------
+Test 9
+--------------------------------------------------------------------------------
+Entrez la phrase generee : a a a a a a a a a a
+Entrez la phrase cible : a a a a a
+1-grammes de la phrase 1 = ["a", "a", "a", "a", "a", "a", "a", "a", "a", "a"]
+2-grammes de la phrase 1 = [( "a", "a" ), ( "a", "a" ), ( "a", "a" ), ( "a", "a" ), ( "a", "a" ), ( "a", "a" ), ( "a", "a" ), ( "a", "a" ), ( "a", "a" )]
+3-grammes de la phrase 1 = [( "a", "a", "a" ), ( "a", "a", "a" ), ( "a", "a", "a" ), ( "a", "a", "a" ), ( "a", "a", "a" ), ( "a", "a", "a" ), ( "a", "a", "a" ), ( "a", "a", "a" )]
+4-grammes de la phrase 1 = [( "a", "a", "a", "a" ), ( "a", "a", "a", "a" ), ( "a", "a", "a", "a" ), ( "a", "a", "a", "a" ), ( "a", "a", "a", "a" ), ( "a", "a", "a", "a" ), ( "a", "a", "a", "a" )]
+1-grammes de la phrase 2 = ["a", "a", "a", "a", "a"]
+2-grammes de la phrase 2 = [( "a", "a" ), ( "a", "a" ), ( "a", "a" ), ( "a", "a" )]
+3-grammes de la phrase 2 = [( "a", "a", "a" ), ( "a", "a", "a" ), ( "a", "a", "a" )]
+4-grammes de la phrase 2 = [( "a", "a", "a", "a" ), ( "a", "a", "a", "a" )]
+c1 = 5, c2 = 4, c3 = 3, c4 = 2.
+r1 = 1.0, r2 = 1.0, r3 = 1.0, r4 = 1.0.
+q1 = 0.5, q2 = 0.4444444444444444, q3 = 0.375, q4 = 0.2857142857142857.
+F1 = 0.6666666666666666, F2 = 0.6153846153846153, F3 = 0.5454545454545454, F4 = 0.4444444444444445.
+--------------------------------------------------------------------------------
+Test 10
+--------------------------------------------------------------------------------
+Entrez la phrase generee : Lors de la construction d'un tableau.
+Entrez la phrase cible : Lors de la construction d'un logiciel contenant un tableau.
+1-grammes de la phrase 1 = ["Lors", "de", "la", "construction", "d", "un", "tableau"]
+2-grammes de la phrase 1 = [( "Lors", "de" ), ( "de", "la" ), ( "la", "construction" ), ( "construction", "d" ), ( "d", "un" ), ( "un", "tableau" )]
+3-grammes de la phrase 1 = [( "Lors", "de", "la" ), ( "de", "la", "construction" ), ( "la", "construction", "d" ), ( "construction", "d", "un" ), ( "d", "un", "tableau" )]
+4-grammes de la phrase 1 = [( "Lors", "de", "la", "construction" ), ( "de", "la", "construction", "d" ), ( "la", "construction", "d", "un" ), ( "construction", "d", "un", "tableau" )]
+1-grammes de la phrase 2 = ["Lors", "de", "la", "construction", "d", "un", "logiciel", "contenant", "un", "tableau"]
+2-grammes de la phrase 2 = [( "Lors", "de" ), ( "de", "la" ), ( "la", "construction" ), ( "construction", "d" ), ( "d", "un" ), ( "un", "logiciel" ), ( "logiciel", "contenant" ), ( "contenant", "un" ), ( "un", "tableau" )]
+3-grammes de la phrase 2 = [( "Lors", "de", "la" ), ( "de", "la", "construction" ), ( "la", "construction", "d" ), ( "construction", "d", "un" ), ( "d", "un", "logiciel" ), ( "un", "logiciel", "contenant" ), ( "logiciel", "contenant", "un" ), ( "contenant", "un", "tableau" )]
+4-grammes de la phrase 2 = [( "Lors", "de", "la", "construction" ), ( "de", "la", "construction", "d" ), ( "la", "construction", "d", "un" ), ( "construction", "d", "un", "logiciel" ), ( "d", "un", "logiciel", "contenant" ), ( "un", "logiciel", "contenant", "un" ), ( "logiciel", "contenant", "un", "tableau" )]
+c1 = 7, c2 = 6, c3 = 4, c4 = 3.
+r1 = 0.7, r2 = 0.6666666666666666, r3 = 0.5, r4 = 0.42857142857142855.
+q1 = 1.0, q2 = 1.0, q3 = 0.8, q4 = 0.75.
+F1 = 0.8235294117647058, F2 = 0.8, F3 = 0.6153846153846154, F4 = 0.5454545454545454.
+--------------------------------------------------------------------------------
+Test 11
+--------------------------------------------------------------------------------
+Entrez la phrase generee : Lors de la construction d'un tableau.
+Entrez la phrase cible : tableau un'd construction la de Lors.
+1-grammes de la phrase 1 = ["Lors", "de", "la", "construction", "d", "un", "tableau"]
+2-grammes de la phrase 1 = [( "Lors", "de" ), ( "de", "la" ), ( "la", "construction" ), ( "construction", "d" ), ( "d", "un" ), ( "un", "tableau" )]
+3-grammes de la phrase 1 = [( "Lors", "de", "la" ), ( "de", "la", "construction" ), ( "la", "construction", "d" ), ( "construction", "d", "un" ), ( "d", "un", "tableau" )]
+4-grammes de la phrase 1 = [( "Lors", "de", "la", "construction" ), ( "de", "la", "construction", "d" ), ( "la", "construction", "d", "un" ), ( "construction", "d", "un", "tableau" )]
+1-grammes de la phrase 2 = ["tableau", "un", "d", "construction", "la", "de", "Lors"]
+2-grammes de la phrase 2 = [( "tableau", "un" ), ( "un", "d" ), ( "d", "construction" ), ( "construction", "la" ), ( "la", "de" ), ( "de", "Lors" )]
+3-grammes de la phrase 2 = [( "tableau", "un", "d" ), ( "un", "d", "construction" ), ( "d", "construction", "la" ), ( "construction", "la", "de" ), ( "la", "de", "Lors" )]
+4-grammes de la phrase 2 = [( "tableau", "un", "d", "construction" ), ( "un", "d", "construction", "la" ), ( "d", "construction", "la", "de" ), ( "construction", "la", "de", "Lors" )]
+c1 = 7, c2 = 0, c3 = 0, c4 = 0.
+r1 = 1.0, r2 = 0.0, r3 = 0.0, r4 = 0.0.
+q1 = 1.0, q2 = 0.0, q3 = 0.0, q4 = 0.0.
+F1 = 1.0, F2 = 0.0, F3 = 0.0, F4 = 0.0.
+--------------------------------------------------------------------------------
+Test 12
+--------------------------------------------------------------------------------
+Entrez la phrase generee : Lors LORS lORS lOrS
+Entrez la phrase cible : LORs lORs loRS lors
+1-grammes de la phrase 1 = ["Lors", "LORS", "lORS", "lOrS"]
+2-grammes de la phrase 1 = [( "Lors", "LORS" ), ( "LORS", "lORS" ), ( "lORS", "lOrS" )]
+3-grammes de la phrase 1 = [( "Lors", "LORS", "lORS" ), ( "LORS", "lORS", "lOrS" )]
+4-grammes de la phrase 1 = [( "Lors", "LORS", "lORS", "lOrS" )]
+1-grammes de la phrase 2 = ["LORs", "lORs", "loRS", "lors"]
+2-grammes de la phrase 2 = [( "LORs", "lORs" ), ( "lORs", "loRS" ), ( "loRS", "lors" )]
+3-grammes de la phrase 2 = [( "LORs", "lORs", "loRS" ), ( "lORs", "loRS", "lors" )]
+4-grammes de la phrase 2 = [( "LORs", "lORs", "loRS", "lors" )]
+c1 = 4, c2 = 3, c3 = 2, c4 = 1.
+r1 = 1.0, r2 = 1.0, r3 = 1.0, r4 = 1.0.
+q1 = 1.0, q2 = 1.0, q3 = 1.0, q4 = 1.0.
+F1 = 1.0, F2 = 1.0, F3 = 1.0, F4 = 1.0.
+--------------------------------------------------------------------------------
+Test 13
+--------------------------------------------------------------------------------
+Entrez la phrase generee : lors
+Entrez la phrase cible : lorsque
+1-grammes de la phrase 1 = ["lors"]
+2-grammes de la phrase 1 = []
+3-grammes de la phrase 1 = []
+4-grammes de la phrase 1 = []
+1-grammes de la phrase 2 = ["lorsque"]
+2-grammes de la phrase 2 = []
+3-grammes de la phrase 2 = []
+4-grammes de la phrase 2 = []
+c1 = 0, c2 = 0, c3 = 0, c4 = 0.
+r1 = 0.0, r2 = 0.0, r3 = 0.0, r4 = 0.0.
+q1 = 0.0, q2 = 0.0, q3 = 0.0, q4 = 0.0.
+F1 = 0.0, F2 = 0.0, F3 = 0.0, F4 = 0.0.
