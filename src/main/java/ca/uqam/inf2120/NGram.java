@@ -3,11 +3,19 @@ package ca.uqam.inf2120;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
+/**
+ * Representation d'un n-gramme
+ */
 public class NGram implements Comparable<NGram> {
 
     public final int n;
     public final String[] values;
 
+    /**
+     * Cree un n-gramme a partir de la liste des arguments en prametre
+     * Le nombre d'arguments sera l'ordre `n` du n-gramme
+     * @param args
+     */
     public NGram(final String ... args) {
         n = args.length;
         values = args;
